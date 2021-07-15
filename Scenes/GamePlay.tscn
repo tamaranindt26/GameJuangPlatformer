@@ -1,0 +1,701 @@
+[gd_scene load_steps=102 format=2]
+
+[ext_resource path="res://Art/Tiles/Tiles/2.png" type="Texture" id=1]
+[ext_resource path="res://Art/Tiles/Tiles/14.png" type="Texture" id=2]
+[ext_resource path="res://Art/Tiles/Tiles/13.png" type="Texture" id=3]
+[ext_resource path="res://Art/Tiles/Object/Object_4.png" type="Texture" id=4]
+[ext_resource path="res://Art/Tiles/Object/Crate.png" type="Texture" id=5]
+[ext_resource path="res://Art/Tiles/Object/Tree_2.png" type="Texture" id=6]
+[ext_resource path="res://Art/Tiles/Tiles/15.png" type="Texture" id=7]
+[ext_resource path="res://Art/Tiles/Tiles/1.png" type="Texture" id=8]
+[ext_resource path="res://Art/Tiles/BG/BG.png" type="Texture" id=9]
+[ext_resource path="res://Art/Tiles/Tiles/3.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=11]
+[ext_resource path="res://Animations/playeranim.tres" type="SpriteFrames" id=12]
+[ext_resource path="res://Scenes/Flag.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Garuda.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Art/GUI/4.png" type="Texture" id=15]
+[ext_resource path="res://Art/GUI/5.png" type="Texture" id=16]
+[ext_resource path="res://Art/Player/02-Run/JK_P_Sword__Run_009.png" type="Texture" id=17]
+[ext_resource path="res://Art/GUI/restart.png" type="Texture" id=18]
+[ext_resource path="res://Art/GUI/bg.png" type="Texture" id=19]
+[ext_resource path="res://Art/GUI/menu.png" type="Texture" id=20]
+[ext_resource path="res://Art/Tiles/Object/golden_trophy.png" type="Texture" id=21]
+[ext_resource path="res://Art/Tiles/Tiles/6.png" type="Texture" id=22]
+[ext_resource path="res://Art/Tiles/Tiles/4.png" type="Texture" id=23]
+[ext_resource path="res://Art/Tiles/Object/Mushroom_2.png" type="Texture" id=44]
+[ext_resource path="res://Art/Tiles/Object/Mushroom_1.png" type="Texture" id=45]
+[ext_resource path="res://Scenes/Bullets.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Art/GUI/h.png" type="Texture" id=47]
+[ext_resource path="res://Scripts/Invader.gd" type="Script" id=48]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_001.png" type="Texture" id=49]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_004.png" type="Texture" id=50]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_006.png" type="Texture" id=51]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_000.png" type="Texture" id=52]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_005.png" type="Texture" id=53]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_003.png" type="Texture" id=54]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_008.png" type="Texture" id=55]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_002.png" type="Texture" id=56]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_009.png" type="Texture" id=57]
+[ext_resource path="res://Art/GUI/bar_2.png" type="Texture" id=58]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/01-Idle/E_E_Sword__Idle_007.png" type="Texture" id=59]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/03-Slash/E_E_Sword__Attack_001.png" type="Texture" id=60]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/03-Slash/E_E_Sword__Attack_002.png" type="Texture" id=61]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/03-Slash/E_E_Sword__Attack_005.png" type="Texture" id=62]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/03-Slash/E_E_Sword__Attack_007.png" type="Texture" id=63]
+[ext_resource path="res://Art/GUI/bar_1.png" type="Texture" id=64]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/03-Slash/E_E_Sword__Attack_006.png" type="Texture" id=65]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/03-Slash/E_E_Sword__Attack_003.png" type="Texture" id=66]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/03-Slash/E_E_Sword__Attack_004.png" type="Texture" id=67]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_003.png" type="Texture" id=68]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_001.png" type="Texture" id=69]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_002.png" type="Texture" id=70]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_000.png" type="Texture" id=71]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_005.png" type="Texture" id=72]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_004.png" type="Texture" id=73]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_006.png" type="Texture" id=74]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_007.png" type="Texture" id=75]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_009.png" type="Texture" id=76]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/02-Run/E_E_Sword__Run_008.png" type="Texture" id=77]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_000.png" type="Texture" id=78]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_001.png" type="Texture" id=79]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_003.png" type="Texture" id=80]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_004.png" type="Texture" id=81]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_006.png" type="Texture" id=82]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_007.png" type="Texture" id=83]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_008.png" type="Texture" id=84]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_003.png" type="Texture" id=85]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_006.png" type="Texture" id=86]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_007.png" type="Texture" id=87]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_002.png" type="Texture" id=88]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_005.png" type="Texture" id=89]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_005.png" type="Texture" id=90]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_009.png" type="Texture" id=91]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_004.png" type="Texture" id=92]
+[ext_resource path="res://Art/Enemy/06-Die/E_E__Die_002.png" type="Texture" id=93]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_000.png" type="Texture" id=94]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_001.png" type="Texture" id=95]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_008.png" type="Texture" id=96]
+[ext_resource path="res://Art/Enemy/_Mode-Sword/04-Hurt/E_E_Sword__Hurt_009.png" type="Texture" id=97]
+[ext_resource path="res://Scripts/Control.gd" type="Script" id=98]
+[ext_resource path="res://Scenes/Key.tscn" type="PackedScene" id=99]
+[ext_resource path="res://Art/GUI/0.png" type="Texture" id=101]
+[ext_resource path="res://Art/GUI/1.png" type="Texture" id=102]
+[ext_resource path="res://Art/GUI/2.png" type="Texture" id=103]
+[ext_resource path="res://Art/GUI/3.png" type="Texture" id=104]
+
+[sub_resource type="TileSet" id=1]
+0/name = "BG.png 0"
+0/texture = ExtResource( 9 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 58, 999, 611 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 48, 0, 48, 48, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 128, 96, 0, 96, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0, 32, 0, 32, 0, 32, 96, 0, 192, 0, 288, 96, 288, 160, 192, 160, 192, 288, 64, 288, 96, 256, 96, 224, 96, 192, 96, 160, 0, 160 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 16, 16, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 80, 80, 0, 80, 0, 0, 80, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 192, 0, 192, 176, 0, 176 )
+
+[sub_resource type="TileSet" id=15]
+0/name = "1.png 0"
+0/texture = ExtResource( 8 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "1.png 1"
+1/texture = ExtResource( 8 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 64, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "2.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 6 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "3.png 3"
+3/texture = ExtResource( 10 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 7 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "13.png 4"
+4/texture = ExtResource( 3 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 128, 96 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 8 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "14.png 5"
+5/texture = ExtResource( 2 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 96 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 9 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "15.png 6"
+6/texture = ExtResource( 7 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 96 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 10 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "Tree_2.png 7"
+7/texture = ExtResource( 6 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 288, 288 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 11 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "Crate.png 8"
+8/texture = ExtResource( 5 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 80, 80 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 12 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "Object_4.png 9"
+9/texture = ExtResource( 4 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 32, 80, 192, 176 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 14 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "Mushroom_2.png 10"
+10/texture = ExtResource( 44 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 48, 48 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 3 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Mushroom_1.png 11"
+11/texture = ExtResource( 45 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 16, 16 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "4.png 12"
+12/texture = ExtResource( 23 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 128, 128 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 4 )
+12/shape_one_way = false
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+12/z_index = 0
+13/name = "6.png 13"
+13/texture = ExtResource( 22 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 128, 128 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 5 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+13/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=16]
+radius = 14.3451
+height = 22.095
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 16.4705, 24.745 )
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ ExtResource( 78 ), ExtResource( 79 ), ExtResource( 93 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 90 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 91 ) ],
+"loop": false,
+"name": "Die",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 95 ), ExtResource( 88 ), ExtResource( 85 ), ExtResource( 92 ), ExtResource( 89 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 96 ), ExtResource( 97 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 52 ), ExtResource( 49 ), ExtResource( 56 ), ExtResource( 54 ), ExtResource( 50 ), ExtResource( 53 ), ExtResource( 51 ), ExtResource( 59 ), ExtResource( 55 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 60 ), ExtResource( 61 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 62 ), ExtResource( 65 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 71 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 68 ), ExtResource( 73 ), ExtResource( 72 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 77 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
+} ]
+
+[node name="GamePlay" type="Node2D"]
+
+[node name="LevelDesign" type="Node2D" parent="."]
+
+[node name="Background" type="TileMap" parent="LevelDesign"]
+scale = Vector2( 1.05, 1.05 )
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0 )
+
+[node name="TileMap" type="TileMap" parent="LevelDesign"]
+scale = Vector2( 0.32, 0.32 )
+tile_set = SubResource( 15 )
+format = 1
+tile_data = PoolIntArray( 65534, 12, 0, 50, 13, 0, 196606, 12, 0, 131122, 13, 0, 327678, 12, 0, 262194, 13, 0, 458750, 12, 0, 393266, 13, 0, 524286, 12, 0, 589822, 12, 0, 524338, 13, 0, 655358, 12, 0, 589846, 4, 0, 589848, 5, 0, 589849, 5, 0, 589850, 5, 0, 589851, 5, 0, 589852, 5, 0, 589854, 5, 0, 589856, 6, 0, 655410, 13, 0, 786430, 12, 0, 720917, 8, 0, 851966, 12, 0, 786453, 8, 0, 786482, 13, 0, 851985, 4, 0, 851987, 5, 0, 851989, 6, 0, 852003, 4, 0, 852005, 5, 0, 852006, 5, 0, 852007, 5, 0, 852009, 6, 0, 983038, 12, 0, 917554, 13, 0, 1114110, 12, 0, 1048576, 5, 0, 1048577, 5, 0, 1048578, 5, 0, 1048580, 5, 0, 1048582, 6, 0, 1048587, 4, 0, 1048589, 5, 0, 1048591, 6, 0, 1048608, 8, 0, 1048621, 4, 0, 1048623, 5, 0, 1048624, 5, 0, 1048625, 5, 0, 1048626, 13, 0, 1114143, 8, 0, 1114144, 8, 0, 1114145, 8, 0, 1245182, 12, 0, 1179656, 8, 0, 1179657, 8, 0, 1179658, 8, 0, 1179670, 4, 0, 1179672, 5, 0, 1179673, 5, 0, 1179674, 5, 0, 1179675, 5, 0, 1179676, 5, 0, 1179677, 5, 0, 1179678, 5, 0, 1179679, 5, 0, 1179680, 5, 0, 1179681, 5, 0, 1179683, 6, 0, 1179698, 13, 0, 1245190, 4, 0, 1245192, 5, 0, 1245194, 6, 0, 1376254, 12, 0, 1310741, 8, 0, 1310763, 8, 0, 1310770, 13, 0, 1376275, 8, 0, 1376277, 8, 0, 1376298, 8, 0, 1376299, 8, 0, 1376306, 13, 0, 1507326, 12, 0, 1441810, 8, 0, 1441811, 8, 0, 1441812, 8, 0, 1441813, 8, 0, 1441831, 4, 0, 1441833, 5, 0, 1441834, 5, 0, 1441836, 6, 0, 1507343, 4, 0, 1507345, 5, 0, 1507346, 5, 0, 1507347, 5, 0, 1507349, 6, 0, 1507378, 13, 0, 1638398, 12, 0, 1638399, 7, 0, 1572912, 7, 0, 1769470, 12, 0, 1703949, 8, 0, 1703950, 8, 0, 1703972, 8, 0, 1703973, 8, 0, 1769483, 8, 0, 1769484, 8, 0, 1769485, 8, 0, 1769486, 8, 0, 1769507, 8, 0, 1769508, 8, 0, 1769509, 8, 0, 1769510, 8, 0, 1769511, 8, 0, 1900542, 12, 0, 1900543, 2, 0, 1835008, 0, 0, 1835010, 2, 0, 1835011, 2, 0, 1835012, 2, 0, 1835013, 2, 0, 1835014, 2, 0, 1835015, 2, 0, 1835016, 2, 0, 1835017, 2, 0, 1835019, 2, 0, 1835021, 2, 0, 1835023, 2, 0, 1835024, 2, 0, 1835025, 2, 0, 1835026, 2, 0, 1835027, 2, 0, 1835028, 2, 0, 1835029, 2, 0, 1835030, 2, 0, 1835031, 2, 0, 1835032, 2, 0, 1835033, 2, 0, 1835034, 2, 0, 1835035, 2, 0, 1835036, 2, 0, 1835037, 2, 0, 1835038, 2, 0, 1835039, 2, 0, 1835040, 2, 0, 1835041, 2, 0, 1835042, 2, 0, 1835043, 2, 0, 1835045, 2, 0, 1835047, 2, 0, 1835048, 2, 0, 1835049, 2, 0, 1835050, 2, 0, 1835051, 2, 0, 1835052, 2, 0, 1835053, 2, 0, 1835054, 2, 0, 1835055, 2, 0, 1835056, 5, 0, 1835057, 3, 0, 1835058, 12, 0 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 169.922, 548.22 )
+collision_layer = 9
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+animations = [ "Idle", "Run", "Jump", "Attack", "Die", "Hurt" ]
+
+[node name="CollisionPlayer" type="CollisionShape2D" parent="Player"]
+shape = SubResource( 16 )
+
+[node name="PlayerAnimSprite" type="AnimatedSprite" parent="Player/CollisionPlayer"]
+scale = Vector2( 0.128, 0.128 )
+frames = ExtResource( 12 )
+animation = "Idle"
+frame = 9
+playing = true
+
+[node name="ShootRight" type="Node2D" parent="Player"]
+position = Vector2( 25, 0 )
+
+[node name="ShootLeft" type="Node2D" parent="Player"]
+position = Vector2( -25, 0 )
+rotation = 3.14159
+
+[node name="Invader" type="KinematicBody2D" parent="."]
+position = Vector2( 515.136, 344.697 )
+collision_layer = 5
+script = ExtResource( 48 )
+__meta__ = {
+"_edit_group_": true
+}
+animations = [ "Idle", "Walk", "Attack", "Die", "Hurt" ]
+moveableDistance = 30
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Invader"]
+shape = SubResource( 17 )
+
+[node name="InvaderAnim" type="AnimatedSprite" parent="Invader/CollisionShape2D"]
+scale = Vector2( 0.128, 0.128 )
+frames = SubResource( 18 )
+animation = "Idle"
+frame = 3
+playing = true
+
+[node name="Invader2" type="KinematicBody2D" parent="."]
+position = Vector2( 559.28, 547.795 )
+collision_layer = 5
+script = ExtResource( 48 )
+__meta__ = {
+"_edit_group_": true
+}
+animations = [ "Idle", "Walk", "Attack", "Die", "Hurt" ]
+moveableDistance = 70
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Invader2"]
+shape = SubResource( 17 )
+
+[node name="InvaderAnim" type="AnimatedSprite" parent="Invader2/CollisionShape2D"]
+scale = Vector2( 0.128, 0.128 )
+frames = SubResource( 18 )
+animation = "Hurt"
+frame = 6
+playing = true
+
+[node name="Invader3" type="KinematicBody2D" parent="."]
+position = Vector2( 532.927, 159.855 )
+collision_layer = 5
+script = ExtResource( 48 )
+__meta__ = {
+"_edit_group_": true
+}
+animations = [ "Idle", "Walk", "Attack", "Die", "Hurt" ]
+moveableDistance = 60
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Invader3"]
+shape = SubResource( 17 )
+
+[node name="InvaderAnim" type="AnimatedSprite" parent="Invader3/CollisionShape2D"]
+scale = Vector2( 0.128, 0.128 )
+frames = SubResource( 18 )
+animation = "Hurt"
+frame = 1
+playing = true
+
+[node name="Bullets" parent="." instance=ExtResource( 46 )]
+visible = false
+
+[node name="Key" parent="." instance=ExtResource( 99 )]
+position = Vector2( 1128.28, 368.452 )
+collision_layer = 9
+
+[node name="KeyContainer" type="Node2D" parent="."]
+
+[node name="Flag" parent="." instance=ExtResource( 13 )]
+position = Vector2( 41.2724, 287.32 )
+collision_layer = 9
+
+[node name="Garuda" parent="." instance=ExtResource( 14 )]
+position = Vector2( 980.485, 290.95 )
+collision_layer = 9
+
+[node name="GUI" type="Node2D" parent="."]
+
+[node name="Control" type="Control" parent="GUI"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 98 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+keycount_texture = [ ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 15 ), ExtResource( 16 ) ]
+
+[node name="bgHeart" type="TextureRect" parent="GUI/Control"]
+margin_left = 12.9751
+margin_top = 19.7545
+margin_right = 429.975
+margin_bottom = 377.754
+rect_scale = Vector2( 0.11, 0.11 )
+texture = ExtResource( 47 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="GUI/Control"]
+margin_left = 67.3735
+margin_top = 21.7725
+margin_right = 2127.37
+margin_bottom = 379.773
+rect_scale = Vector2( 0.12, 0.1 )
+max_value = 10.0
+value = 10.0
+texture_under = ExtResource( 64 )
+texture_progress = ExtResource( 58 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="keyRect" type="TextureRect" parent="GUI/Control"]
+margin_left = 373.864
+margin_top = 10.5493
+margin_right = 967.864
+margin_bottom = 549.549
+rect_scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="keyCount" type="TextureRect" parent="GUI/Control"]
+margin_left = 442.216
+margin_top = 23.2483
+margin_right = 492.216
+margin_bottom = 86.2483
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 101 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinLose" type="TextureRect" parent="GUI/Control"]
+visible = false
+margin_left = 268.891
+margin_top = 102.0
+margin_right = 1216.89
+margin_bottom = 983.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/Control/WinLose"]
+margin_left = 150.886
+margin_top = 55.2357
+margin_right = 362.886
+margin_bottom = 105.236
+rect_scale = Vector2( 3, 3 )
+text = "Maaf Kamu Belum Berhasil"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HomeBTN" type="TextureButton" parent="GUI/Control/WinLose"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="GUI/Control/WinLose/HomeBTN"]
+margin_left = 576.873
+margin_top = 513.309
+margin_right = 790.873
+margin_bottom = 728.309
+texture = ExtResource( 20 )
+
+[node name="RestartBTN" type="TextureButton" parent="GUI/Control/WinLose"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="GUI/Control/WinLose/RestartBTN"]
+margin_left = 164.0
+margin_top = 516.0
+margin_right = 378.0
+margin_bottom = 731.0
+texture = ExtResource( 18 )
+
+[node name="char" type="TextureRect" parent="GUI/Control/WinLose"]
+margin_left = 332.081
+margin_top = 200.693
+margin_right = 797.081
+margin_bottom = 642.693
+rect_scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 17 )
+
+[connection signal="pressed" from="GUI/Control/WinLose/HomeBTN" to="GUI/Control" method="_on_HomeBTN_pressed"]
+[connection signal="pressed" from="GUI/Control/WinLose/RestartBTN" to="GUI/Control" method="_on_RestartBTN_pressed"]
